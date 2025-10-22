@@ -1,0 +1,82 @@
+/* Estilo base (mobile first) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #4e7dd1;
+  color: white;
+}
+
+.desafio {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Mascote (simulado como um bloco colorido) */
+.mascote {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 20px auto 0;
+  border-radius: 50%;
+}
+
+/* Breakpoint 480px - layout pequeno */
+@media (min-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .mascote {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Breakpoint 768px - tablet */
+@media (min-width: 768px) {
+  .desafio {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+  }
+
+  .mascote {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+/* Breakpoint 1200px - desktop */
+@media (min-width: 1200px) {
+  .desafio {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .mascote {
+    margin: 0;
+  }
+}
